@@ -1,7 +1,7 @@
 
 # SUICIDE RATE ANALYSIS
 
-## INTRODUCTION AND MOTIVATION
+## INTRODUCTION
 ----
 
 Suicide rates have become a significant concern in modern society, particularly as they are often linked to depression. Other contributing factors include economic issues, social pressures, and terminal illnesses. To combat this, AI-based chatbots have been developed with an approximate accuracy of 75% to deter individuals from taking their own lives. Moving forward, it's crucial to harness machine learning techniques to more precisely predict suicide attempts. Initial data analysis would explore the number of suicides and examine how various factors correlate and contribute to these incidents. The study would also include visual representations to better understand patterns in suicide attempts. By employing various Python libraries and building multiple models, the research aims to identify the model with the lowest error rate. This study focuses on forecasting suicide rates and understanding the influential factors through machine learning algorithms.
@@ -47,3 +47,15 @@ Suicide rates have become a significant concern in modern society, particularly 
 * The current study aims to utilize data analysis to categorize information, providing insights into the causes of suicide within specific regions and timeframes. By examining trends in suicide rates and their underlying causes, the research seeks to inform future preventive measures. Additionally, the study intends to assess whether the incidence of suicide has risen or fallen over time, allowing for comparisons and the development of effective strategies.
 
 * The findings of this investigation can be applied across various approaches to address the issue of suicide prevention. Through a comprehensive review of global suicide data, the study offers organized insights for readers. Early detection of individuals at risk of suicide is crucial for prevention efforts, and machine learning is being explored as a potential tool for this purpose. Our research focuses on developing machine learning models, such as K Nearest Neighbor, Decision Trees, and Random Forest Regression, to predict suicide attempts. The study evaluates the effectiveness of these algorithms in identifying at-risk individuals.
+
+----
+
+# REFERENCES
+
+1) Boudreaux, E. D., Rundensteiner, E., Liu, F., Wang, B., Larkin, C., Agu, E., Ghosh, S., Semeter, J., Simon, G., & Davis-Martin, R. E. (2021). Applying Machine Learning Approaches to Suicide Prediction Using Healthcare Data: Overview and Future Directions. Frontiers in psychiatry, 12, 707916. https://doi.org/10.3389/fpsyt.2021.707916
+
+2) Gen-Min Lin, Masanori Nagamine, Szu-Nian Yang, Yueh-Ming Tai, Chin Lin, Hiroshi Sato, “Machine Learning Based Suicide Ideation Prediction for Military Personnel”, IEEE Journal of Biomedical and Health Informatics, vol. 24, issue: 7, July 2020
+
+3) Hasmitha Bhutham, “Suicide rates analysis and prediction” , December 2020.
+
+4) Mrs. B. Ida Seraphim , Subroto Das , Apoorv Ranjan, 2021, A Machine Learning Approach to Analyze and Predict Suicide Attempts, INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT) Volume 10, Issue 04 (April 2021).

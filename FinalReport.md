@@ -1,61 +1,71 @@
+# Suicide Rate Analysis and Prediction
+![1_sldzYWPPlz08SGK61VRpqA](https://user-images.githubusercontent.com/94312082/190874958-e7062bd6-c402-48ad-a7d5-e83d995dd169.jpeg)
 
-# SUICIDE RATE ANALYSIS
+Link to youtube video - https://www.youtube.com/watch?v=hXhDTA4ZKCE
 
-## INTRODUCTION
-----
+Link to PPT - 
 
-Suicide rates have become a significant concern in modern society, particularly as they are often linked to depression. Other contributing factors include economic issues, social pressures, and terminal illnesses. To combat this, AI-based chatbots have been developed with an approximate accuracy of 75% to deter individuals from taking their own lives. Moving forward, it's crucial to harness machine learning techniques to more precisely predict suicide attempts. Initial data analysis would explore the number of suicides and examine how various factors correlate and contribute to these incidents. The study would also include visual representations to better understand patterns in suicide attempts. By employing various Python libraries and building multiple models, the research aims to identify the model with the lowest error rate. This study focuses on forecasting suicide rates and understanding the influential factors through machine learning algorithms.
+# INTODUCTION
+Suicides have become increasingly concerning in today's society, often linked to depression and various external factors. To prevent suicide attempts, machine learning algorithms can be employed to accurately anticipate them. This study aims to analyze suicide rates and the influencing factors using machine learning. Preliminary data analysis will reveal suicide numbers and the relationship between various factors. Graphical representations will be used to better understand the trends in suicide attempts. Multiple machine learning models will be constructed and compared to determine which has the least error. This research investigates how machine learning algorithms can predict suicide rates and the factors that influence them. 
+# IMPORTANCE OF CURRENT STUDY
+* Suicide is a significant global issue that impacts individuals of all ages and backgrounds. The World Health Organization reports that approximately 800,000 people die by suicide annually, ranking it as the 18th leading cause of death worldwide. In the United States, suicide was the tenth leading cause of death in 2018, contributing to a decline in average life expectancy. The repercussions of suicide are profound, affecting not only the individuals involved but also their families, communities, and societies as a whole.
+* Mental health conditions, particularly depression, are major factors contributing to suicidal behavior. While depression is often associated with individuals in their 30s and 40s, it can affect people of all ages, including children and the elderly, due to various stressors such as academic pressure and interpersonal relationships. However, due to the stigma surrounding mental illness, many individuals may hide their condition, making it difficult to identify those at risk.
+* Preventing suicide requires a comprehensive approach that includes understanding the complex factors that contribute to suicidal behavior. One of the challenges in suicide prevention is accurately predicting who is at risk. Despite efforts to identify risk and protective factors, such as mental health history and social support, predictions based on these factors have shown poor accuracy and limited improvement over time.
+* This study seeks to address these challenges by using machine learning algorithms to predict suicide rates and identify individuals at risk. By analyzing large datasets and identifying patterns, machine learning can provide valuable insights into the factors contributing to suicide. This research has the potential to improve suicide prevention strategies and ultimately save lives.
+# EXPECTATIONS FROM CURRENT STUDY
+* Data analysis is performed in order to classify data so that a set of preventive measures can be implemented in the future. This can provide information on the causes of suicide in a specific state and year. The dataset can also show whether the suicide rate for a specific cause has increased or decreased. Not only will analysis and classification give preventative strategies, but they will also enable comparisons to determine whether the suicide incidence has increased or decreased over time. The findings of this study could be applied to a variety of approaches to solve the problem. A thorough investigation was conducted into global suicide information. The following chapters are methodically designed to provide the reader with an organized interpretation.
+* Early identification of people who are at risk of suicide is critical for suicide prevention. Machine learning is emerging as a possible strategy for achieving this goal. The aim of our research is to develop a machine learning model for predicting suicide attempts. Some of the models employed are K Nearest Neighbor, Decision Trees, and Random Forest Regression. The effectiveness of these algorithms is compared in this study.
+# OUTCOMES INTENDED TO ACHIEVE  
+* This analysis is aimed at explaining how different machine learning algorithms can be used in predicting suicide rates based on relevant factors collected in the dataset.
+* The analysis carried out will also provide knowledge about areas of improvement to the government and other organizations working towards suicide prevention and counselling so that effective steps can be taken.
+# METHODS AND TECHNIQUES
+## Data Acquisition
+The Suicide Rates Overview 1985 to 2016 dataset which is taken from Kaggle consists of 27820 rows and 12 columns. It is compiled from four different datasets (United Nations Development Program (HDI), World Bank, World Health Organization, and Szmali) to identify any attributes that correlated with suicide rates globally. The data is readily available and downloadable in CSV format.
+## Cleaning and Normalization
+After acquiring the dataset, we will remove null values or redundant rows, drop repeated columns, and perform outlier analysis and treatment. Country, year, sex, age and generation are all non-numerical labeled columns that will be transformed to numerical labels using SkLearn's LabelEncoder. Many machine learning estimators need dataset standardization: if the individual features do not resemble standard normally distributed data, they may perform poorly. SkLearn's RobustScaler is used to normalize the numerical columns population, gdp_for_year, and gdp_per_capita.
+## Exploratory Data Analysis
+In this stage, many data mining techniques are utilized to uncover hidden trends in the dataset and determine the correlation between variables, as well as plot multiple graphs to uncover trends in suicide rates and identify the many causes that contribute to suicide. Several python libraries such as NumPy, seaborn, matplotlib etc. have been used. Various plots have been shown to better visualize the data. Correlations are shown with the help of heatmaps and scatterplots.
+## Machine Learning Models
+Now we will train multiple machine learning models on our dataset and utilize validation techniques to check for overall fit. Finally, we will present the best model for suicide prediction. K Nearest Neighbor, Decision Tree Regression, Random Forest Regression, XGBoost Regression and Multilayer Perceptrons are implemented and evaluated based on accuracies and RMSE scores.
+# IMPLEMENTATION
+## Dataset
+The dataset has been taken from Kaggle. It has 27,820 rows with 12 columns. Some of the columns are numerical types which include GDP per capita, HDI for year, suicides_no, while others like country, age, sex, generation etc. are categorical. It includes data from over 100 countries from 1985 to 2016.
+## Evaluation Metrics
+The Evaluation Metrics used are accuracy and RMSE scores. Accuracy is a common evaluation metric for classification problems. It is the number of correct predictions made as a ratio of all predictions made. RMSE is one of the most widely used measures for assessing the precision of continuous data. Because RMSE gives large errors a higher weight than MAE, it should be more useful when large errors are undesirable.
+Since XGBoost Regression has the highest accuracy and lowest RMSE, it can be considered the best model.
+## Model Training and Evaluation 
+Our Machine Learning algorithms are K Nearest Neighbor, Decision Tree, Random Forest, XGBoost, and Multilayer Perceptrons (Deep Learning). Below are the accuracies and RMSE's of each model.
 
-----
+K Nearest Neighbor Regression : Accuracy - 0.771, RMSE- 0.279
 
-## DATASET DESCRIPTION
+Decision Tree Regression : Accuracy - 0.967, RMSE- 0.105
 
-1. Data Source: **https://www.kaggle.com/datasets/russellyates88/suicide-rates-overview-1985-to-2016**
-2. Data Size  : **3MB**
-3. Data Shape : **30000 Rows and 12 Columns** 
-4. Time Period: **1985 to 2016**
-5. Dataset Columns
+Random Forest Regression - Accuracy - 0.988, RMSE- 0.063
 
-| No. | Variable               | Type     |
-|-----|------------------------|----------|
-| 1   | country                | object   |
-| 2   | year                   | int64    |
-| 3   | sex                    | object   |
-| 4   | age                    | object   |
-| 5   | suicides_no            | int64    |
-| 6   | population             | int64    |
-| 7   | suicides/100k pop      | float64  |
-| 8   | country-year           | object   |
-| 9   | HDI for year           | float64  |
-| 10  | gdp_for_year ($)       | object   |
-| 11  | gdp_per_capita ($)     | int64    |
-| 12  | generation             | object   |
-----
+XG Boost Regression - Accuracy - 0.997, RMSE- 0.029
 
-## NEED OF CURRENT STUDY
+Multilayer Perceptrons : Deep Learning - Accuracy - 0.887, RMSE- 0.195
 
-* The World Health Organization reports that annually, about 800,000 people commit suicide, ranking it as the 18th leading cause of death globally. In the United States, it was the tenth leading cause of death in 2018, contributing to a decline in the country's average life expectancy. Suicide impacts individuals across all age groups worldwide. It is estimated that for every adult who dies by suicide, there are over 20 others who attempt it. The majority of suicides, about 79%, occur in low- and middle-income countries.
+# RESULTS DISCUSSION
 
-* Today, many people face severe physical and mental health challenges due to various internal and external factors. Depression commonly affects individuals in their 30s and 40s, but it is also prevalent among children and the elderly, often triggered by academic pressures and social relationships. The stigma associated with mental illness in many societies leads those affected to hide their conditions. Economic instability, along with drug and alcohol abuse, also plays a significant role in self-harm and suicide attempts.
+Data analysis helped us understand several underlying trends in suicide attempts over the years 1985 and 2016. Coming to the performance of the four machine learning models - Among all the trained models, XGBoost has the highest accuracy and lowest RMSE. This is because XGBoost is very good in execution Speed & model performance. Random forest had an accuracy of 98.9%, followed by Decision Tree, Multilayer Perceptrons and K-Nearest Neighbors with 96.7, 88.7 and 77.1 % respectively.
 
-* The initial step in suicide prevention is often seen as a classification challenge, where the goal is to accurately identify individuals at risk of suicide within a specific timeframe to enable timely intervention. However, the most comprehensive meta-analysis, which reviewed 365 studies, indicated that predictions based on individual risk or protective factors have low accuracy and have shown little improvement over time.
+# CONCLUSION 
 
-----
+This analysis was aimed at explaining how different machine learning algorithms can be used in predicting suicide rates based on relevant factors collected in the dataset. Although there have been several successful high precision models, there is still potential for development. Preliminary data analysis showed some surprising findings which includes teen men are more likely to commit suicide. Machine learning algorithms like XGBoost and Random Forest Regression consistently outperformed other algorithms and had the highest accuracy and precision. The analysis carried out will also provide knowledge about areas of improvement to the government and other organizations working towards suicide prevention and counselling so that effective steps can be taken.
 
-## Anticipated Outcomes of Current Study
+# FUTURE WORK
 
-* The current study aims to utilize data analysis to categorize information, providing insights into the causes of suicide within specific regions and timeframes. By examining trends in suicide rates and their underlying causes, the research seeks to inform future preventive measures. Additionally, the study intends to assess whether the incidence of suicide has risen or fallen over time, allowing for comparisons and the development of effective strategies.
-
-* The findings of this investigation can be applied across various approaches to address the issue of suicide prevention. Through a comprehensive review of global suicide data, the study offers organized insights for readers. Early detection of individuals at risk of suicide is crucial for prevention efforts, and machine learning is being explored as a potential tool for this purpose. Our research focuses on developing machine learning models, such as K Nearest Neighbor, Decision Trees, and Random Forest Regression, to predict suicide attempts. The study evaluates the effectiveness of these algorithms in identifying at-risk individuals.
-
-----
+* This project can be further improvised by combining multiple data sets related to suicides and performing in-depth analysis.
+* Some statistical tests- hypothesis testing can be performed which can extract valuable insights.
+* Sentiment Analysis can be used to figure out in which social media people feel more free to talk about their mental health.
 
 # REFERENCES
 
-1) Boudreaux, E. D., Rundensteiner, E., Liu, F., Wang, B., Larkin, C., Agu, E., Ghosh, S., Semeter, J., Simon, G., & Davis-Martin, R. E. (2021). Applying Machine Learning Approaches to Suicide Prediction Using Healthcare Data: Overview and Future Directions. Frontiers in psychiatry, 12, 707916. https://doi.org/10.3389/fpsyt.2021.707916
+Boudreaux, E. D., Rundensteiner, E., Liu, F., Wang, B., Larkin, C., Agu, E., Ghosh, S., Semeter, J., Simon, G., & Davis-Martin, R. E. (2021). Applying Machine Learning Approaches to Suicide Prediction Using Healthcare Data: Overview and Future Directions. Frontiers in psychiatry, 12, 707916. https://doi.org/10.3389/fpsyt.2021.707916
 
-2) Gen-Min Lin, Masanori Nagamine, Szu-Nian Yang, Yueh-Ming Tai, Chin Lin, Hiroshi Sato, “Machine Learning Based Suicide Ideation Prediction for Military Personnel”, IEEE Journal of Biomedical and Health Informatics, vol. 24, issue: 7, July 2020
+Gen-Min Lin, Masanori Nagamine, Szu-Nian Yang, Yueh-Ming Tai, Chin Lin, Hiroshi Sato, “Machine Learning Based Suicide Ideation Prediction for Military Personnel”, IEEE Journal of Biomedical and Health Informatics, vol. 24, issue: 7, July 2020
 
-3) Hasmitha Bhutham, “Suicide rates analysis and prediction” , December 2020.
+Hasmitha Bhutham, “Suicide rates analysis and prediction” , December 2020.
 
-4) Mrs. B. Ida Seraphim , Subroto Das , Apoorv Ranjan, 2021, A Machine Learning Approach to Analyze and Predict Suicide Attempts, INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT) Volume 10, Issue 04 (April 2021).
+Mrs. B. Ida Seraphim , Subroto Das , Apoorv Ranjan, 2021, A Machine Learning Approach to Analyze and Predict Suicide Attempts, INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT) Volume 10, Issue 04 (April 2021).

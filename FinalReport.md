@@ -44,7 +44,6 @@ Random Forest Regression - Accuracy - 0.988, RMSE- 0.063
 
 XG Boost Regression - Accuracy - 0.997, RMSE- 0.029
 
-Multilayer Perceptrons : Deep Learning - Accuracy - 0.887, RMSE- 0.195
 
 # RESULTS DISCUSSION
 

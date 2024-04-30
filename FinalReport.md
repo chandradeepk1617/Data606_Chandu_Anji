@@ -34,7 +34,7 @@ The dataset has been taken from Kaggle. It has 27,820 rows with 12 columns. Some
 The Evaluation Metrics used are accuracy and RMSE scores. Accuracy is a common evaluation metric for classification problems. It is the number of correct predictions made as a ratio of all predictions made. RMSE is one of the most widely used measures for assessing the precision of continuous data. Because RMSE gives large errors a higher weight than MAE, it should be more useful when large errors are undesirable.
 Since XGBoost Regression has the highest accuracy and lowest RMSE, it can be considered the best model.
 ## Model Training and Evaluation 
-Our Machine Learning algorithms are K Nearest Neighbor, Decision Tree, Random Forest, XGBoost, and Multilayer Perceptrons (Deep Learning). Below are the accuracies and RMSE's of each model.
+Our Machine Learning algorithms are K Nearest Neighbor, Decision Tree, Random Forest, XGBoost. Below are the accuracies and RMSE's of each model.
 
 K Nearest Neighbor Regression : Accuracy - 0.771, RMSE- 0.279
 

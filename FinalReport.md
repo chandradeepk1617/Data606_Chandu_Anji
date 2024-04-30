@@ -47,7 +47,7 @@ XG Boost Regression - Accuracy - 0.997, RMSE- 0.029
 
 # RESULTS DISCUSSION
 
-Data analysis helped us understand several underlying trends in suicide attempts over the years 1985 and 2016. Coming to the performance of the four machine learning models - Among all the trained models, XGBoost has the highest accuracy and lowest RMSE. This is because XGBoost is very good in execution Speed & model performance. Random forest had an accuracy of 98.9%, followed by Decision Tree, Multilayer Perceptrons and K-Nearest Neighbors with 96.7, 88.7 and 77.1 % respectively.
+Data analysis helped us understand several underlying trends in suicide attempts over the years 1985 and 2016. Coming to the performance of the four machine learning models - Among all the trained models, XGBoost has the highest accuracy and lowest RMSE. This is because XGBoost is very good in execution Speed & model performance. Random forest had an accuracy of 98.3%, followed by Decision Tree,  and K-Nearest Neighbors with 95.8, and 79.1 % respectively.
 
 # CONCLUSION 
 
